@@ -1,0 +1,37 @@
+name: Bug Report
+description: File a bug report
+labels: ["bug"]
+body:
+  - type: checkboxes
+    attributes:
+      label: Has the bug already been reported?
+      description: "Please check that the bug you're reporting hasn't already been reported. You can use the GitHub issues search box to help with this."
+      options:
+        - label: "I have checked that the bug hasn't already been reported"
+          required: true
+  - type: textarea
+    attributes:
+      label: Steps to reproduce
+      description: Tell us what steps to follow to reproduce the bug
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Expected behavior
+      description: Tell us what you expect to happen when you follow the steps
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Actual behavior
+      description: Tell us what actually does happen when you follow the steps
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Browser and operating system information
+      description: Tell us which browser, browser version, and operating system you were using when you encountered this issue
+  - type: textarea
+    attributes:
+      label: Additional details
+      description: If you have other information which might be helpful, please include it. If a screenshot will help to illustrate the issue you are reporting, please include one.
